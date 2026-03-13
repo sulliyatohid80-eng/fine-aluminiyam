@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Order | Aman Aluminium</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">AMAN <span class="highlight">ALUMINIUM</span></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html" class="active">Contact/Order</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav glass-panel">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact/Order</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal-up">
+            <h1>Place an <span class="metallic-text">Order</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Request a quote or submit your order details online. We will get back to you immediately.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Order Form -->
+                <div class="glass-card reveal-left" style="padding: 3rem;">
+                    <h2 style="margin-bottom: 2rem;">Order Details</h2>
+                    
+                    <div id="form-success-msg" style="display: none; background: rgba(37, 211, 102, 0.2); border: 1px solid var(--whatsapp-green); color: white; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <i class="fas fa-check-circle" style="color: var(--whatsapp-green);"></i> Order sent successfully! We will contact you soon.
+                    </div>
+                    <div id="form-error-msg" style="display: none; background: rgba(220, 38, 38, 0.2); border: 1px solid #dc2626; color: white; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <i class="fas fa-exclamation-circle" style="color: #dc2626;"></i> Failed to send order. Please try WhatsApp.
+                    </div>
+
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="customerName">Full Name *</label>
+                            <input type="text" id="customerName" name="customerName" class="form-control" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number *</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required placeholder="+91 0000000000">
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="productName">Product Interest</label>
+                                <select id="productName" name="productName" class="form-control">
+                                    <option value="General Enquiry">General Enquiry</option>
+                                    <option value="Aluminium Window">Aluminium Window</option>
+                                    <option value="Aluminium Door">Aluminium Door</option>
+                                    <option value="Aluminium Frame">Aluminium Frame</option>
+                                    <option value="Aluminium Glass Work">Aluminium Glass Work</option>
+                                    <option value="Aluminium Sliding Door">Aluminium Sliding Door</option>
+                                    <option value="Aluminium Partition">Aluminium Partition</option>
+                                    <option value="Custom Work">Custom Work</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="quantity">Quantity / Approx SqFt</label>
+                                <input type="text" id="quantity" name="quantity" class="form-control" placeholder="e.g. 5 doors">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Delivery / Installation Address *</label>
+                            <input type="text" id="address" name="address" class="form-control" required placeholder="Full Address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Message / Requirements</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell us about sizing, color preferences, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                            Submit Order
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="contact-info reveal-right">
+                    <div class="glass-card" style="padding: 2.5rem; margin-bottom: 2rem;">
+                        <h3>Store Location</h3>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 1.5rem;">Visit our processing unit and showroom.</p>
+                        
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="color: var(--accent-cyan); font-size: 1.5rem;"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong style="color: white;">Aman Aluminium</strong><br>
+                                <span style="color: var(--text-muted);">Hussain Tekri, Palanpur Mumbai Road<br>Kanodar, Gujarat</span>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="color: var(--accent-cyan); font-size: 1.5rem;"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong style="color: white;">Phone / WhatsApp</strong><br>
+                                <span style="color: var(--text-muted);">+91 6355604330</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/916355604330" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Large Interactive Map -->
+                    <div class="glass-card map-wrapper" style="padding: 0; overflow: hidden; height: 350px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.266006764426!2d72.33649511520625!3d24.116534584409395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395ceb8a2e0a297b%3A0xe5a14d485e7836ea!2sKanodar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1715421250000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Reusing simple footer layout -->
+        <div class="container footer-grid" style="grid-template-columns: 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>AMAN <span class="highlight">ALUMINIUM</span></h3>
+                <p>Premium quality aluminium products.</p>
+            </div>
+            <div class="footer-contact" style="text-align: right;">
+                <p style="justify-content: flex-end;"><i class="fas fa-phone-alt"></i> +91 6355604330</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
